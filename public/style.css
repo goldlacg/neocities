@@ -3,48 +3,19 @@
    "how to change link color." */
 
 html{
-  background-image: url('wood-bkg.jpg');
+  background-image: url('orange-panel-bkg.png');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: rgb(20, 9, 1);
-  text-shadow: 3px 3px 1px rgb(158, 141, 163);
-}
-
-p {
-  color: rgb(24, 12, 2)
-}
-
-.image-border-box {
-  width: 500px;
-  height: 500px;
-  padding: 20px;
-  border: 80px solid transparent;
-  border-image: url('frame02.jpg') 64;
 }
 
 .draggable {
   position: absolute;
 }
 
-.boat-painting {
-  background-image: url("painting.jpg");
-  background-size: cover;
-  width: 22em;
-  height: 16em;
-  left: 100px;
-  top: 400px;
-}
-
-.greek-city {
-  background-image: url("greek-city-painting.png");
-  background-size: cover;
-  width: 18em;
-  height: 22em;
-  top: 100px;
-  left: 400px;
+.wrapper {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    row-gap: 0;
 }
