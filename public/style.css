@@ -29,3 +29,10 @@ p {
   color: darkseagreen;
   text-decoration: line-through solid black 2px;
 }
+
+.image-border-box {
+  width: 300px;
+  padding: 20px;
+  border: 20px solid transparent;
+  border-image: url('frame01.jpg') 30;
+}
