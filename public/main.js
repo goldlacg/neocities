@@ -1,8 +1,9 @@
 const draggable = document.querySelector(".draggable");
 
-let isDragging = false;
 let offsetX = 0;
 let offsetY = 0;
+let isDragging = false;
+
 
 draggable.addEventListener("mousedown", (event) => {
     isDragging = true;
