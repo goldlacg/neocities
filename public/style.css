@@ -7,3 +7,12 @@ body {
   color: black;
   font-family: Verdana;
 }
+
+html {
+  .swanky-and-moo-moo-regular {
+  font-family: "Swanky and Moo Moo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+}
