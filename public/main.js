@@ -1,4 +1,4 @@
-let draggable = document.querySelector(".draggable");
+/*const draggable = document.querySelector(".draggable");
 
 let offsetX = 0;
 let offsetY = 0;
@@ -13,14 +13,6 @@ draggable.addEventListener("mousedown", (event) => {
 })
 
 document.addEventListener("mousemove", (event) =>{
-    const x = event.clientX;
-    const y = event.clientY;
-    
-
-    if (document.elementFromPoint(x,y) == document.querySelector(".draggable")) {
-        draggable = document.elementFromPoint(x, y);
-    }
-
     if (isDragging){
         draggable.style.left = `${event.clientX - offsetX}px`
         draggable.style.top = `${event.clientY - offsetY}px`
@@ -30,4 +22,5 @@ document.addEventListener("mousemove", (event) =>{
 
 document.addEventListener("mouseup", (event) => {
     isDragging = false;
-})
+})*/
+
