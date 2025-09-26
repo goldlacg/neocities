@@ -20,14 +20,3 @@ html{
     row-gap: 0;
 }
 
-.header {
-  background-image: url("banner-bkg.png");
-}
-
-.name {
-  background-image: url("name-banner.png");
-}
-
-.body-bkg {
-  background-image: url("brown-body-bkg.png");
-}
