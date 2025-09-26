@@ -3,7 +3,7 @@
    "how to change link color." */
 
 html{
-  background-color: rgb(148, 92, 46)
+  background-image: url('brick_bkg.jpg');
 }
 
 body {
