@@ -18,5 +18,17 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-top: 6%;
-    row-gap: 0;
+}
+
+.header {
+  position: absolute;
+  top: -36px;
+  left: -90px;
+}
+
+.name {
+  position: absolute;
+  top: -36px;
+  left: -90px;
+  z-index: 1;
 }
