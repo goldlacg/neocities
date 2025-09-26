@@ -34,6 +34,11 @@ p {
 
 .draggable {
   position: absolute;
-  width: auto;
-  height: auto;
+  width: 22em;
+  height: 16em;
+}
+
+.boat-painting {
+  background-image: url("painting.jpg");
+  background-size: cover;
 }
