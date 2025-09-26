@@ -39,3 +39,10 @@ p {
   border: 80px solid transparent;
   border-image: url('frame02.jpg') 64;
 }
+
+.draggable {
+  position: absolute;
+  width: 15em;
+  height: 15em;
+  background: blue;
+}

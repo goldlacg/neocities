@@ -1,23 +1,6 @@
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+const draggable = document.querySelector('.draggable');
 
-function setUserName() {
-    const myName = prompt("Please enter your name.");
-    if (!myName) {
-        setUserName();
-    } else{
-        localStorage.setItem("name", myName);
-        myHeading.textContent = `Welcome to my page ${myName}`;
-    }
-}
-
-if (!localStorage.getItem("name")) {
-    setUserName();
-} else {
-    const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Welcome to my page ${myName}`;
-}
-
-myButton.addEventListener("click", () => {
-    setUserName();
-});
+document.addEventListener("mousemove", (event) =>{
+    draggable.style.left = `${event.clientX}px`
+    draggable.style.top = `${event.clientY}px`
+})
