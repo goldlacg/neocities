@@ -19,3 +19,8 @@ html{
     margin-top: 6%;
     row-gap: 0;
 }
+
+.header {
+  background-image: url("brown-body-bkg.png");
+  
+}
