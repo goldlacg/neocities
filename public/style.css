@@ -34,8 +34,8 @@ p {
 
 .draggable {
   position: absolute;
-  width: 22em;
-  height: 16em;
+  width: auto;
+  height: auto;
 }
 
 .boat-painting {
