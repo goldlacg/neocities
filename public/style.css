@@ -3,9 +3,9 @@
    "how to change link color." */
 
 html{
-  /*background-image: url('wood-bkg.jpg');
+  background-image: url('wood-bkg.jpg');
   background-size: cover;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -35,7 +35,7 @@ p {
 .draggable {
   position: absolute;
   width: 22em;
-  height: 15em;
+  height: 16em;
   background-image: url("painting.jpg");
   background-size: cover;
   
