@@ -35,5 +35,5 @@ p {
   width: 300px;
   padding: 20px;
   border: 20px solid transparent;
-  border-image: url('frame01.jpg') 30;
+  border-image: url('frame01.jpg') 200;
 }
