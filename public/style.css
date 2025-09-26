@@ -2,24 +2,21 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
-body {
-  background-color: rgb(140, 73, 22);
-  color: black;
+html{
+  background-color: rgb(70, 52, 52)
 }
 
-html {
-  font-size: 30px;
-  font-family: "Swanky and Moo Moo", cursive;
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color:rgb(51, 31, 28);
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
 }
 
 h1 {
-  font-size: 60px;
-  text-align: center;
-}
-
-p,
-li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
+  margin: 0;
+  padding: 20px 0;
+  color: rgb(213, 217, 223);
+  text-shadow: 3px 3px 1px black;
 }
