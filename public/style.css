@@ -9,10 +9,6 @@ body {
 }
 
 html {
-  .swanky-and-moo-moo-regular {
+  font-size: 10px;
   font-family: "Swanky and Moo Moo", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 }
