@@ -3,7 +3,7 @@
    "how to change link color." */
 
 html{
-  background-color: rgb(107, 58, 18)
+  background-color: rgb(95, 63, 37)
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  margin: 0;
+  margin: 100px;
   padding: 20px 0;
   color: rgb(56, 26, 5);
   text-shadow: 3px 3px 1px rgb(158, 141, 163);
