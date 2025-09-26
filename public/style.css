@@ -34,6 +34,6 @@ p {
 .image-border-box {
   width: 500px;
   padding: 20px;
-  border: 100px solid transparent;
-  border-image: url('frame01.jpg') 200;
+  border: 80px solid transparent;
+  border-image: url('frame02.jpg') 200;
 }
