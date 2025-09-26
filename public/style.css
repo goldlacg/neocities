@@ -8,14 +8,6 @@ html{
   background-repeat: no-repeat;
 }
 
-body {
-  width: 600px;
-  height: 500px;
-  margin: 50px auto auto auto;
-  background-color:rgb(209, 206, 192);
-  padding: 20px;
-}
-
 h1 {
   margin: 0;
   padding: 20px 0;

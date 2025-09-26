@@ -1,4 +1,4 @@
-const draggable = document.querySelector('.draggable');
+const draggable = document.querySelector(".draggable");
 
 document.addEventListener("mousemove", (event) =>{
     draggable.style.left = `${event.clientX}px`
