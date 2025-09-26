@@ -24,3 +24,8 @@ h1 {
 p {
   color: rgb(232, 234, 240)
 }
+
+.done {
+  color: darkseagreen;
+  text-decoration: line-through solid black 2px;
+}
