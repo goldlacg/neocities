@@ -13,7 +13,6 @@ body {
   margin: auto;
   background-color:rgb(209, 206, 192);
   padding: 20px;
-  border: 30px ridge rgb(129, 160, 93);
 }
 
 h1 {
@@ -35,6 +34,6 @@ p {
 .image-border-box {
   width: 500px;
   padding: 20px;
-  border: 50px solid transparent;
+  border: 100px solid transparent;
   border-image: url('frame01.jpg') 200;
 }
