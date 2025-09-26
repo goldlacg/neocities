@@ -37,12 +37,13 @@ p {
   width: 22em;
   height: 16em;
   left: 300px;
+  top: 400px;
 }
 
 .greek-city {
   background-image: url("greek-city-painting.png");
   background-size: cover;
-  width: 17em;
+  width: 18em;
   height: 22em;
   top: 100px;
 }
