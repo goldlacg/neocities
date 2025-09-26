@@ -34,7 +34,7 @@ p {
 
 .draggable {
   position: absolute;
-  width: 20em;
+  width: 25em;
   height: 15em;
   background-image: url("painting.jpg");
   background-size: cover;
