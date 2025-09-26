@@ -5,6 +5,7 @@
 html{
   background-image: url('brick_bkg.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 body {
