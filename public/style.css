@@ -10,7 +10,7 @@ html{
 
 body {
   width: 600px;
-  margin: auto;
+  margin: 50px;
   background-color:rgb(209, 206, 192);
   padding: 20px;
 }
@@ -35,5 +35,5 @@ p {
   width: 500px;
   padding: 20px;
   border: 80px solid transparent;
-  border-image: url('frame02.jpg') 200;
+  border-image: url('frame02.jpg') 20;
 }
