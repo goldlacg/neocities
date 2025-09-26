@@ -34,17 +34,20 @@ p {
 
 .draggable {
   position: absolute;
-  width: 22em;
-  height: 16em;
+  
 }
 
 .boat-painting {
   background-image: url("painting.jpg");
   background-size: cover;
+  width: 22em;
+  height: 16em;
   left: 300px;
 }
 
 .greek-city {
   background-image: url("greek-city-painting.png");
   background-size: cover;
+  width: 16em;
+  height: 22em;
 }
