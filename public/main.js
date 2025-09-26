@@ -15,7 +15,11 @@ draggable.addEventListener("mousedown", (event) => {
 document.addEventListener("mousemove", (event) =>{
     const x = event.clientX;
     const y = event.clientY;
-    draggable = document.elementFromPoint(x, y);
+    
+
+    if (document.elementFromPoint(x,y) == document.querySelector(".draggable")) {
+        draggable = document.elementFromPoint(x, y);
+    }
 
     if (isDragging){
         draggable.style.left = `${event.clientX - offsetX}px`
