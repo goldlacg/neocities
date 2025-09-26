@@ -34,7 +34,6 @@ p {
 
 .draggable {
   position: absolute;
-  
 }
 
 .boat-painting {
@@ -50,4 +49,5 @@ p {
   background-size: cover;
   width: 16em;
   height: 22em;
+  top: 100px;
 }
