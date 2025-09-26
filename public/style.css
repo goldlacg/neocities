@@ -3,15 +3,15 @@
    "how to change link color." */
 
 html{
-  background-color: rgb(70, 52, 52)
+  background-color: rgb(107, 58, 18)
 }
 
 body {
   width: 600px;
   margin: 0 auto;
-  background-color:rgb(51, 31, 28);
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+  background-color:rgb(209, 206, 192);
+  padding: 20px;
+  border: 10px ridge rgb(15, 26, 2);
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
 }
 
 p {
-  color: rgb(232, 234, 240)
+  color: rgb(24, 12, 2)
 }
 
 .done {
