@@ -1,35 +1,200 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The web site of goldlace</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script async src="main.js"></script>
-  </head>
-  <body>
-    <div class="wrapper" style="position: absolute">
-      <img src="brown-body-bkg.png">
-      <div class="header">
-        <img src="banner-bkg.png">
-        <div class="name">
-          <img src="name-banner.png">
-        </div>
-      </div>
-      <div class="body-bkg"></div>
-    </div>
-  </body>
-    
-    <!--
-    <h1>This is the start of my website!</h1>
+<head>
+	<title></title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Silkscreen&display=swap');
+		body {
+			font-family: "IBM Plex Mono", monospace;
+			background: #E9E3C6;
+			background-image: url('img/bg.png');
+		}
 
-    <p>I will be continously working on this, I love <em>artistic</em> projects that involve <strong>code</strong> :D</p>
-    -->
-    
-  
+		.wrapper {
+			border: 3px solid #380D41;
+			width: 615px;
+			height: 385px;
+			box-shadow: 3px 3px 0 #96A99A;
+			background-image: url('img/consolebg.png');
+			border-radius: 5px;
+			margin: auto;
+			margin-top: calc(50vh - 190px);
+		}
+
+		.wrapper::after {
+			content: " ";
+			display: block;
+			border: 3px solid #380D41;
+			border-top: 0;
+			width: 615px;
+			height: 9px;
+			box-shadow: 3px 3px 0 #96A99A;
+			position: relative;
+			left: -3px;
+			top: -3px;
+			border-radius: 0 0 5px 5px;
+		}
+
+		.content {
+			background: #536982;
+			border-radius: 5px;
+		}
+
+		.menu a {
+			font-family: "Silkscreen", sans-serif;
+			border: 3px solid #380D41;
+			border-bottom-color: #536982;
+			color: #380D41;
+			text-decoration: none;
+			display: inline-block;
+			height: 41px;
+			font-size: 13px;
+			width: 128px;
+			margin-left: -3px;
+			border-radius: 3px;
+			line-height: 33px;
+			position: relative;
+		}
+
+		.menu a:hover {
+			position: relative;
+			top: 4px;
+		}
+
+		.menu a:hover::before {
+			background-color: #380D41;
+			display: block;
+			content: " " ;
+			height: 6px;
+			width: calc(100% + 6px);
+			position: absolute;
+			top: -7px;
+			left: -3px;
+		}
+
+		.menu a::after {
+			background-color: #96A99A;
+			display: block;
+			content: " " ;
+			height: 3px;
+			width: 90px;
+			margin: auto;
+		}
+
+		.screen {
+			width: 512px;
+			height: 294px;
+			background: #96A99A;
+			border: 3px solid #380D41;
+			margin: auto;
+			margin-top: 20px;
+			position: relative;
+			border-radius: 5px;
+		}
+
+		iframe {
+			border: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.menu {
+			margin: auto;
+			text-align: center;
+			margin-top: 18px;
+		}
+
+		.marquee {
+		  overflow: hidden;
+		  display: flex;
+		  line-height: 20px;
+		  position: absolute;
+		  width: 100%;
+		  bottom: -5px;
+		  z-index: 1;
+		}
+
+		.marquee span{
+			white-space: nowrap;
+		}
+
+		.pipi {
+		  position: absolute;
+		  left: 20px;
+		  bottom: 0;
+		  z-index: 2;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="screen">
+			<iframe name="content" src="home.html"></iframe>
+			<img src="img/pipi.gif" class="pipi">
+			<div class="marquee">
+				<span>
+					<img src="img/mar_1.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="img/mar_2.png">
+					<img src="img/mar_3.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="img/mar_4.png">
+					<img src="img/mar_5.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="img/mar_1.png">
+					&nbsp;
+					<img src="img/mar_2.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="img/mar_3.png">
+					&nbsp;
+					&nbsp;
+					<img src="img/mar_4.png">
+					&nbsp;
+					&nbsp;
+					<img src="img/mar_5.png">
+				</span>
+			</div>
+		</div>
+		<div class="subtext"></div>
+		<div class="menu">
+			<a href="home.html" target="content">home</a><a href="blog.html" target="content">music</a><a href="stuff.html" target="content">gallery</a><a href="about.html" target="content">about</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function Marquee(selector, speed) {
+			const parentSelector = document.querySelector(selector);
+			const clone = parentSelector.innerHTML;
+			const firstElement = parentSelector.children[0];
+			let i = 0;
+			console.log(firstElement);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+
+			setInterval(function () {
+				firstElement.style.marginLeft = `-${i}px`;
+				if (i > firstElement.clientWidth) {
+					i = 0;
+				}
+				i = i + speed;
+			}, 0);
+		}
+
+		window.addEventListener('load', Marquee('.marquee', 0.4))
+
+	</script>
+</body>
 </html>
