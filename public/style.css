@@ -1,33 +1,89 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
-html{
-  background-image: url('orange-panel-bkg.png');
-  width: 100%;
-  height: 1080px;
-  background-size: cover;
-  background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Silkscreen&display=swap');
+html {
+	scrollbar-width: thin;
+	scrollbar-color: #536982 #53698270;
 }
 
-.draggable {
-  position: absolute;
+body {
+	font-family: "IBM Plex Mono", monospace;
+	overflow-x: hidden;
+	font-size: 12px;
+	line-height: 1.1rem;
+	color: #380D41;
+	background: #96A99A;
+	padding: 0;
+	margin: 0;
+	padding: 15px;
+	border-top: 3px solid #536982;
+	border-left: 3px solid #536982;
 }
 
-.wrapper {
-    margin: 0 auto;
-    margin-top: 6%;
+.title {
+	font-family: "Silkscreen", sans-serif;
+	position: fixed;
+	display: inline-block;
+	padding: 3px 6px;
+	background: #380D41;
+	color: #E9E3C6;
+	top: 0;
+	left: 0;
 }
 
-.header {
-  position: absolute;
-  top: -36px;
-  left: -90px;
+h1, h2, h3 {
+	font-size: 14px;
+	font-family: "Silkscreen", sans-serif;
 }
 
-.name {
-  position: absolute;
-  top: -36px;
-  left: -90px;
-  z-index: 1;
+h1::after {
+	display: block;
+	content: " ";
+	height: 3px;
+	width: 14px;
+	background: #536982;
+	margin-top: 8px;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	margin-top: 1.5rem;
+	color: #536982;
+}
+
+.page img {
+	border-radius: 6px;
+}
+
+.width-50 {
+	max-width: 50%;
+}
+
+.border {
+	border: 2px solid #536982;
+}
+
+.page {
+	padding-bottom: 50px;
+}
+
+.page a {
+	color: #536982;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 6px 12px;
+    vertical-align: top;
+}
+
+th {
+	background: #53698270;
 }
