@@ -73,8 +73,12 @@ a:focus {
     text-decoration: none;
 }
 
+/*__________________________*/
+/* LAYOUT */
+/*__________________________*/
+
 .layout {
-    width: 100%;
+    width: 1000px;
     display: grid;
     grid-gap: var(--margin);
     grid-template: "header header" auto "leftSidebar main" auto "footer footer" auto / var(--sidebar-width) auto;
