@@ -20,6 +20,7 @@
     /*other*/
     --margin: 40px;
     --padding: 24px;
+    --header-padding: 40px;
     --border: 4px solid #ff5858;
     --round-borders: 22px;
     --sidebar-width: 250px;
@@ -107,10 +108,12 @@ header {
     border-radius: var(--round-borders);
     background: var(--content-background-color);
     background-image: url(SRimg/glassblock-p3.png);
+    background-size: 100%;
+    background-position: center;
 }
 
 .header-content {
-    padding: var(--padding);
+    padding: var(--header-padding);
 }
 
 .header-title {
@@ -123,6 +126,22 @@ header {
 .header-image img {
     width: 100%;
     height: auto;
+}
+
+.header::before,
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: inherit;
+    z-index: -2;
+}
+
+.header::after {
+    filter: blur(10px);
 }
 
 /*__________________________*/
