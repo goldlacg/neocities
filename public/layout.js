@@ -29,7 +29,7 @@ function headerHTML() {
       <header>
 
         <div class="header-content">
-	        <div class="header-title">lace space</div>
+	        <div class="header-title">lace's space</div>
 	        
         	
         </div>

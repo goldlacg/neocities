@@ -486,6 +486,24 @@ ___*/
     object-fit: cover;
 }
 
+/*___
+all about salmonoid
+___*/
+
+.salmonoidsign {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    translate: 100px 100px;
+}
+
+#salmonoidpic {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
 /*__________________________*/
 /* ACCESSIBILITY */
 /*__________________________*/
