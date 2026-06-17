@@ -1,200 +1,49 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<style type="text/css">
-		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Silkscreen&display=swap');
-		body {
-			font-family: "IBM Plex Mono", monospace;
-			background: #E9E3C6;
-			background-image: url('img/bg.png');
-		}
+<html lang="en">
+    <head>
+        <!--this is the title-->
+        <title>grizzco</title>
 
-		.wrapper {
-			border: 3px solid #380D41;
-			width: 615px;
-			height: 385px;
-			box-shadow: 3px 3px 0 #96A99A;
-			background-image: url('img/consolebg.png');
-			border-radius: 5px;
-			margin: auto;
-			margin-top: calc(50vh - 190px);
-		}
+        <!--description of site in search results-->
+        <meta content ="this is test website desc" name="description"/>
 
-		.wrapper::after {
-			content: " ";
-			display: block;
-			border: 3px solid #380D41;
-			border-top: 0;
-			width: 615px;
-			height: 9px;
-			box-shadow: 3px 3px 0 #96A99A;
-			position: relative;
-			left: -3px;
-			top: -3px;
-			border-radius: 0 0 5px 5px;
-		}
+        <!--setting character encoding and viewport size, DNR-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		.content {
-			background: #536982;
-			border-radius: 5px;
-		}
+        <link href="favicon.ico" rel="icon" type="image/x-icon"/>
 
-		.menu a {
-			font-family: "Silkscreen", sans-serif;
-			border: 3px solid #380D41;
-			border-bottom-color: #536982;
-			color: #380D41;
-			text-decoration: none;
-			display: inline-block;
-			height: 41px;
-			font-size: 13px;
-			width: 128px;
-			margin-left: -3px;
-			border-radius: 3px;
-			line-height: 33px;
-			position: relative;
-		}
+        <!-- add css file-->
 
-		.menu a:hover {
-			position: relative;
-			top: 4px;
-		}
+        <!-- add js-->
 
-		.menu a:hover::before {
-			background-color: #380D41;
-			display: block;
-			content: " " ;
-			height: 6px;
-			width: calc(100% + 6px);
-			position: absolute;
-			top: -7px;
-			left: -3px;
-		}
+    </head>
+    <body>
+        <div class="layout">
+            <!-- header will be loaded with js-->
 
-		.menu a::after {
-			background-color: #96A99A;
-			display: block;
-			content: " " ;
-			height: 3px;
-			width: 90px;
-			margin: auto;
-		}
+            <main id="content">
+                <noscript>
+                    <p>JavaScript is required for this site to function properly.</p>
+                </noscript>
 
-		.screen {
-			width: 512px;
-			height: 294px;
-			background: #96A99A;
-			border: 3px solid #380D41;
-			margin: auto;
-			margin-top: 20px;
-			position: relative;
-			border-radius: 5px;
-		}
+                <!-- main content-->
+                 <section>
 
-		iframe {
-			border: 0;
-			width: 100%;
-			height: 100%;
-		}
+                    <h1>Grizzco Industries</h1>
+                    <p>Let's talk about Splatoon 3's Salmon Run.</p>
+                    <blockquote>Clock on and get to work.</blockquote>
+                    <h2>Big Big Run is starting on 6/19 @ 8pmEST!</h2>
+                    <p>I've been grinding Salmon Run for a couple weeks now. Before, I would max out at around Eggsecutive 40ish, but 
+                        with help from the Salmon Run discord and Rachelskiiii's videos, I'm able to get to around EVP 200. There are a couple maps where I'm still under that,
+                        but as I'm getting better with more weapons, I'm progressing more easily. I also got to EVP 600 on Sockeye Station(?) back when it had Triumvirate.
+                        The Grizzco weapons pretty much did the work for me there. 
+                        
+                    </p>
 
-		.menu {
-			margin: auto;
-			text-align: center;
-			margin-top: 18px;
-		}
-
-		.marquee {
-		  overflow: hidden;
-		  display: flex;
-		  line-height: 20px;
-		  position: absolute;
-		  width: 100%;
-		  bottom: -5px;
-		  z-index: 1;
-		}
-
-		.marquee span{
-			white-space: nowrap;
-		}
-
-		.pipi {
-		  position: absolute;
-		  left: 20px;
-		  bottom: 0;
-		  z-index: 2;
-		}
-	</style>
-</head>
-<body>
-
-	<div class="wrapper">
-		<div class="screen">
-			<iframe name="content" src="home.html"></iframe>
-			<img src="img/pipi.gif" class="pipi">
-			<div class="marquee">
-				<span>
-					<img src="img/mar_1.png">
-					&nbsp;
-					&nbsp;
-					&nbsp;
-					&nbsp;
-					<img src="img/mar_2.png">
-					<img src="img/mar_3.png">
-					&nbsp;
-					&nbsp;
-					&nbsp;
-					<img src="img/mar_4.png">
-					<img src="img/mar_5.png">
-					&nbsp;
-					&nbsp;
-					&nbsp;
-					<img src="img/mar_1.png">
-					&nbsp;
-					<img src="img/mar_2.png">
-					&nbsp;
-					&nbsp;
-					&nbsp;
-					&nbsp;
-					&nbsp;
-					<img src="img/mar_3.png">
-					&nbsp;
-					&nbsp;
-					<img src="img/mar_4.png">
-					&nbsp;
-					&nbsp;
-					<img src="img/mar_5.png">
-				</span>
-			</div>
-		</div>
-		<div class="subtext"></div>
-		<div class="menu">
-			<a href="home.html" target="content">home</a><a href="blog.html" target="content">blog</a><a href="stuff.html" target="content">gallery</a><a href="about.html" target="content">about</a>
-		</div>
-	</div>
-
-	<script type="text/javascript">
-		function Marquee(selector, speed) {
-			const parentSelector = document.querySelector(selector);
-			const clone = parentSelector.innerHTML;
-			const firstElement = parentSelector.children[0];
-			let i = 0;
-			console.log(firstElement);
-			parentSelector.insertAdjacentHTML('beforeend', clone);
-			parentSelector.insertAdjacentHTML('beforeend', clone);
-
-			setInterval(function () {
-				firstElement.style.marginLeft = `-${i}px`;
-				if (i > firstElement.clientWidth) {
-					i = 0;
-				}
-				i = i + speed;
-			}, 0);
-		}
-
-		window.addEventListener('load', Marquee('.marquee', 0.4))
-
-	</script>
-</body>
+                 </section>
+            </main>
+            <!-- footer will be loaded with js-->
+        </div>
+    </body>
 </html>
