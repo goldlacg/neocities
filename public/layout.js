@@ -51,11 +51,11 @@ function headerHTML() {
           </div>
           <div class="sidebar-title">Navigation</div>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="${nesting}/about">About</a></li>
-            <li><a href="/page2">Page 2</a></li>
-            <li><a href="/page3">Page 3</a></li>
-        	<li>
+            <li><a href="${nesting}home">Home</a></li>
+            <li><a href="${nesting}about">About</a></li>
+            <!--<li><a href="/page2">Page 2</a></li>
+            <li><a href="/page3">Page 3</a></li>-->
+        	<!--<li>
         	
               	<details>
                 <summary>Submenu</summary>
@@ -67,7 +67,7 @@ function headerHTML() {
                   <li><a href="/page-e">Page E</a></li>
                 </ul>
                 </details>
-            </li>
+            </li>-->
           </ul>
         </nav>
         <!--
@@ -84,17 +84,17 @@ function headerHTML() {
             <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
           </blockquote>
         </div>
-        -->
+        
         <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
+          <div class="sidebar-title">Filler</div>
           <ul>
             <li>List</li>
             <li>List</li>
-            <li><a href="/">List</a></li>
+            <li>List</li>
             <li>List</li>
           </ul>
         </div>
-        
+        -->
         
         <div class="sidebar-section">
           <div class="sidebar-title">Really cool sites</div>
