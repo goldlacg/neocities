@@ -453,12 +453,18 @@ ___*/
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-self: center;
     position: absolute;
-    width: 1350px;
-    height: 800px;
+    translate: -160px;
+    width: 220px;
+    height: 450px;
     transform: rotate(17deg);
-    filter: drop-shadow(rgb(255, 161, 61) 0px 0px 0.75rem);
+    transition: transform 0.2s ease;
+    filter: drop-shadow(rgb(255, 170, 80) 0px 0px 0.75rem);
+}
+
+.pointsign:hover {
+    transform: rotate(22deg);
+    filter:brightness(125%) drop-shadow(rgb(255, 199, 101) 0px 0px 0.75rem);
 }
 
 #arrowpic {
@@ -472,12 +478,17 @@ all about eat sign
 ___*/
 
 .eatsign {
-    z-index: -2;
+    z-index: 0;
     display: flex;
     align-items: center;
     position: absolute;
-    translate: 955px 400px;
-    filter: drop-shadow(rgb(26, 255, 106) 0px 0px 0.75rem);
+    translate: 965px 400px;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(rgb(26, 255, 106) 6px 0px 0.75rem);
+}
+
+.eatsign:hover {
+    filter:brightness(200%) drop-shadow(rgb(64, 255, 131) 6px 0px 0.75rem);
 }
 
 #eatpic {
@@ -505,6 +516,7 @@ ___*/
 
 .salmonoidsign:hover {
     transform: rotate(-48deg);
+    filter:brightness(125%) drop-shadow(rgb(253, 104, 63) 0px 0px 0.75rem);
 }
 
 #salmonoidpic {

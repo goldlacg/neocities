@@ -67,7 +67,7 @@ function headerHTML() {
             </li>
           </ul>
         </nav>
-        
+        <!--
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -81,7 +81,7 @@ function headerHTML() {
             <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
           </blockquote>
         </div>
-        
+        -->
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <ul>
@@ -92,26 +92,29 @@ function headerHTML() {
           </ul>
         </div>
         
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <marquee>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          </marquee>
-        </div>
         
         <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
+          <div class="sidebar-title">Really cool sites</div>
+          <marquee>
+          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          	<a href="https://cheepfish.neocities.org/" target="_blank"><img loading="lazy" src="https://cheepfish.neocities.org/gif/cheepfishbutton.gif"></a>
+          	<a href="https://stupied.net/" target="_blank"><img src="https://stupied.net/meta/button.png" alt="stupied"></a>
+          	<a href="https://teppyslayouts.neocities.org/" target="_blank"><img src="https://teppyslayouts.neocities.org/teppyslayouts.gif"></a>
+          </marquee>
+        </div>
+
+        
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">FILLER</div>
           <img class="full-width-image" src="https://picsum.photos/id/37/1000/400">
         </div>
         
         <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
+          <div class="sidebar-title">My Button</div>
           <div class="site-button">
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-        	<textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
+          	<a href="https://goldlace.neocities.org/" target="_blank"><img src="SRimg/tempButton.png" alt="grizzco"></a>
+        	<textarea><a href="https://goldlace.neocities.org/" target="_blank"><img src="SRimg/tempButton.png" alt="grizzco"></a></textarea>
           </div>
         </div>
       </aside>
@@ -132,7 +135,7 @@ function footerHTML() {
       <!-- =============================================== -->
 
       <footer>
-            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+            <div>est. jun '26 | <a href="https://neocities.org/site/goldlace">neocities profile</a>.</div>
       </footer>`;
 }
 
