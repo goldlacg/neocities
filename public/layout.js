@@ -149,7 +149,7 @@ function footerHTML() {
       <!-- =============================================== -->
 
       <footer>
-            <div>est. jun '26 | <a href="https://neocities.org/site/goldlace">neocities profile</a>.</div>
+            <div>est. jun '26 | <a href="https://neocities.org/site/goldlace">neocities profile</a> | insta: @kinda.blooky</div>
       </footer>`;
 }
 

@@ -15,7 +15,7 @@
     /* text */
     --font: Monaco, monospace;
     --heading-font: Helvetica, sans-serif;
-    --font-size: 12px;
+    --font-size: 16px;
 
     /*other*/
     --margin: 40px;
@@ -326,10 +326,12 @@ main ol {
 }
 
 main blockquote {
+    font-size: 24px;
     background: rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 1em 0;
     border-radius: 10px;
+    text-align: center;
 }
 
 main pre {
@@ -351,6 +353,15 @@ main hr {
     background-image: url("SRimg/dnc-tape-sticker.png");
     background-size: 256px 256px;
     background-position: center;
+}
+
+main section {
+    padding-block: 10px;
+    padding-inline: 5px;
+    position: relative;
+    border: 3px dashed rgb(11, 109, 80);
+    margin-bottom: 1em;
+    border-radius: 10px;
 }
 
 /*__________________________*/
@@ -378,11 +389,13 @@ main h6:first-child {
 }
 
 main h1 {
-  font-size: 1.5em;
+  font-size: 3em;
+  text-align: center;
 }
 
 main h2 {
-  font-size: 1.4em;
+  font-size: 2em;
+  text-align: center;
 }
 
 main h3 {
@@ -530,6 +543,27 @@ ___*/
 
 #salmonoidpic {
     width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+/*___
+all about fish net
+___*/
+
+.fishnet {
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    translate: 880px -200px;
+    filter:saturate(120%) brightness(60%);
+    opacity: 90%;
+
+}
+
+#fishnetpic {
+    width: 500px;
     height: auto;
     object-fit: cover;
 }
