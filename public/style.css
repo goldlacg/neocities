@@ -4,11 +4,11 @@
     /* background colors */
     --background-color: #000000;
     --content-background-color: #111014;
-    --sidebar-background-color: #111014;
+    --sidebar-background-color: #67452356;
 
     /* text colors */
     --text-color: #edeacc;
-    --sidebar-text-color: #adca73;
+    --sidebar-text-color: #421408;
     --link-color: #e0700e;
     --link-color-hover: #529431;
 
@@ -158,9 +158,16 @@ aside {
 }
 
 .sidebar-title {
+    display: block;
+    border: 2px solid #ff7037;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 1.2em;
     font-family: var(--heading-font);
+    text-align: center;
+    box-shadow: 0 0 7px rgb(255, 43, 6),
+        0 0 7px rgb(255, 43, 6);
+    background: radial-gradient(ellipse, #fef7c8 7%, #fed84d 51%, #fb593c 100%);
 }
 
 .sidebar-section:not(:last-child) {
@@ -339,9 +346,11 @@ main center {
 }
 
 main hr {
-    border: 0;
-    border-top: var(--border);
-    margin: 1.5em 0;
+    border: none;
+    height: 30px;
+    background-image: url("SRimg/dnc-tape-sticker.png");
+    background-size: 256px 256px;
+    background-position: center;
 }
 
 /*__________________________*/

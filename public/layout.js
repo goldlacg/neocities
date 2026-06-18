@@ -100,14 +100,28 @@ function headerHTML() {
           	<a href="https://cheepfish.neocities.org/" target="_blank"><img loading="lazy" src="https://cheepfish.neocities.org/gif/cheepfishbutton.gif"></a>
           	<a href="https://stupied.net/" target="_blank"><img src="https://stupied.net/meta/button.png" alt="stupied"></a>
           	<a href="https://teppyslayouts.neocities.org/" target="_blank"><img src="https://teppyslayouts.neocities.org/teppyslayouts.gif"></a>
+            <a href="https://karakuliiii.neocities.org/" target="_blank"><img src="https://karakuliiii.neocities.org/images/assets/iiiibutton.gif" alt="karakuliiii"></a>
+            <a href="https://nenrikido.neocities.org/"><img src="https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif"></img></a>
+            
           </marquee>
         </div>
 
         
         
         <div class="sidebar-section">
-          <div class="sidebar-title">FILLER</div>
-          <img class="full-width-image" src="https://picsum.photos/id/37/1000/400">
+          <div class="sidebar-title">blinkies</div>
+          <div class="blinkie-section">
+            <img src="blinkies/splatoon3.gif">
+            <img src="blinkies/octo-time.gif">
+            <img src="blinkies/despite-everything.gif">
+            <img src="blinkies/gotta-go-fast.gif">
+            <img src="blinkies/shadow-hedgehog.gif">
+            <img src="blinkies/insomniac.gif">
+            <img src="blinkies/possums.gif">
+            <img src="blinkies/hug-cow.gif">
+            <img src="blinkies/mspaint-palette.gif">
+            <img src="blinkies/gay-octopus.gif">
+          </div>
         </div>
         
         <div class="sidebar-section">
