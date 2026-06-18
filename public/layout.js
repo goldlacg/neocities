@@ -51,7 +51,7 @@ function headerHTML() {
           </div>
           <div class="sidebar-title">Navigation</div>
           <ul>
-            <li><a href="${nesting}home">Home</a></li>
+            <li><a href="${nesting}">Home</a></li>
             <li><a href="${nesting}about">About</a></li>
             <!--<li><a href="/page2">Page 2</a></li>
             <li><a href="/page3">Page 3</a></li>-->
