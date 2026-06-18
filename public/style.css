@@ -1,3 +1,13 @@
+/*fonts*/
+@font-face {
+    font-family: rock-salt;
+    src: url(fonts/RockSalt-Regular.ttf);
+}
+@font-face {
+    font-family: fuzzy-bubbles;
+    src: url(fonts/FuzzyBubbles-Regular.ttf);
+}
+
 /* variables */
 
 :root {
@@ -13,8 +23,8 @@
     --link-color-hover: #529431;
 
     /* text */
-    --font: Monaco, monospace;
-    --heading-font: Helvetica, sans-serif;
+    --font: fuzzy-bubbles;
+    --heading-font: rock-salt;
     --font-size: 16px;
 
     /*other*/
@@ -132,6 +142,13 @@ header {
 .header-image img {
     width: 100%;
     height: auto;
+}
+
+#salmonlinepic {
+    z-index: 5;
+    position: absolute;
+    translate: 0 -30px;
+    filter:brightness(180%) saturate(150%) drop-shadow(rgb(255, 145, 98) 0px 2px 8px);
 }
 
 /*__________________________*/

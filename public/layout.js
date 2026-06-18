@@ -30,7 +30,7 @@ function headerHTML() {
 
         <div class="header-content">
 	        <div class="header-title">lace's space</div>
-	        
+	        <img src="SRimg/small-salmon-line.png" id="salmonlinepic">
         	
         </div>
       </header>
