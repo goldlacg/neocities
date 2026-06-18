@@ -14,7 +14,7 @@
     /* background colors */
     --background-color: #000000;
     --content-background-color: #111014;
-    --sidebar-background-color: #67452356;
+    --sidebar-background-color: #30251a9c;
 
     /* text colors */
     --text-color: #edeacc;
@@ -25,6 +25,7 @@
     /* text */
     --font: fuzzy-bubbles;
     --heading-font: rock-salt;
+    --sidebar-font: Helvetica;
     --font-size: 16px;
 
     /*other*/
@@ -174,17 +175,34 @@ aside {
     grid-area: rightSidebar;
 }
 
+.sidebar-banner {
+    display: block;
+
+    border: none;
+    width: 150px;
+    height: 45px;
+}
+
+#grizzlogopic {
+    z-index: 0;
+    position: absolute;
+    align-items: center;
+    width: 196px;
+    translate: -26px -96px;
+}
+
 .sidebar-title {
     display: block;
     border: 2px solid #ff7037;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     font-weight: bold;
     font-size: 1.2em;
-    font-family: var(--heading-font);
+    font-family: var(--sidebar-font);
     text-align: center;
     box-shadow: 0 0 7px rgb(255, 43, 6),
         0 0 7px rgb(255, 43, 6);
-    background: radial-gradient(ellipse, #fef7c8 7%, #fed84d 51%, #fb593c 100%);
+    background: rgb(255, 126, 90);
 }
 
 .sidebar-section:not(:last-child) {
@@ -344,8 +362,8 @@ main ol {
 
 main blockquote {
     font-size: 24px;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    background: rgba(93, 88, 83, 0.1);
+    padding: 4px;
     margin: 1em 0;
     border-radius: 10px;
     text-align: center;
@@ -366,11 +384,21 @@ main center {
 
 main hr {
     border: none;
+    height: 40px;
+    margin: 0;
+    background-image: url("SRimg/striped-eel-sticker.png");
+    background-size: 150px;
+    background-position: center;
+}
+
+#warning hr {
+    border: none;
     height: 30px;
     background-image: url("SRimg/dnc-tape-sticker.png");
     background-size: 256px 256px;
-    background-position: center;
+    background-position:center;
 }
+
 
 main section {
     padding-block: 10px;
@@ -581,6 +609,23 @@ ___*/
 
 #fishnetpic {
     width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+/*
+squid graffiti
+*/
+
+.squidgraffiti {
+    display: flex;
+    position: absolute;
+    translate: 650px -55px;
+    rotate: 22deg;
+}
+
+#squidgraffitipic {
+    width: 100px;
     height: auto;
     object-fit: cover;
 }

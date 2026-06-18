@@ -46,6 +46,9 @@ function headerHTML() {
         
         <!-- NAVIGATION -->
         <nav>
+          <div class="sidebar-banner">
+            <img src="SRimg/grizzco-logo-dither.png" id="grizzlogopic">
+          </div>
           <div class="sidebar-title">Navigation</div>
           <ul>
             <li><a href="/">Home</a></li>
