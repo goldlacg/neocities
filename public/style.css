@@ -128,11 +128,21 @@ header {
     box-shadow: var(--box-shadow);
 }
 
+/*changing link appearance for text in header only*/
+header a,
+header a:active,
+header a:visited,
+header a:hover {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 .header-content {
     padding: var(--padding);
 }
 
 .header-title {
+    z-index: 5;
     font-family: var(--heading-font);
     font-size: 1.5em;
     font-weight: bold;
@@ -146,7 +156,7 @@ header {
 }
 
 #salmonlinepic {
-    z-index: 5;
+    z-index: 4;
     position: absolute;
     translate: 0 -30px;
     filter:brightness(180%) saturate(150%) drop-shadow(rgb(255, 145, 98) 0px 2px 8px);

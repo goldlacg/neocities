@@ -29,7 +29,7 @@ function headerHTML() {
       <header>
 
         <div class="header-content">
-	        <div class="header-title">lace's space</div>
+	        <div class="header-title"><a href="${nesting}">lace's space</a></div>
 	        <img src="SRimg/small-salmon-line.png" id="salmonlinepic">
         	
         </div>
