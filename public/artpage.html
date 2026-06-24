@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--this is the title-->
+        <title>lace's space</title>
+
+        <!--description of site in search results-->
+        <meta content ="this is test website desc" name="description"/>
+
+        <!--setting character encoding and viewport size, DNR-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+
+        <!-- add css file-->
+         <link href="./style.css" rel="stylesheet"/>
+         <link href="./portfoliostyle.css" rel="stylesheet"/>
+
+        <!-- add js-->
+         <script src="./layout.js"></script>
+         <script src="./piczoom.js"></script>
+
+         <script>
+            console.log("Template generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+
+         </script>
+
+    </head>
+    <body>
+        <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+        <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+        <div class="layout">
+            <!-- header will be loaded with js-->
+
+            <!--PICTURES THAT ARE ~SOMEWHERE~-->
+            <div class="pointsign">
+                <img src="light-up-arrow.png" id="arrowpic">
+            </div>
+            <div class="eatsign">
+                <img src="SRimg/eat-neon-sign-p1.png" id="eatpic">
+            </div>
+            <div class="salmonoidsign">
+                <img src="SRimg/salmonoid-sign.png" id="salmonoidpic">
+            </div>
+            <div class="fishnet">
+                <img src="SRimg/fishnet.png" id="fishnetpic">
+            </div>
+
+
+            <main id="content">
+                <noscript>
+                    <p>JavaScript is required for this site to function properly.</p>
+                </noscript>
+
+                <!-- main content-->
+
+                <div class="row">
+                    <div class="column">
+                        <img id="artpic" src="artimg/pomni-trapped.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/pomni-jax-dramatic-light.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/tadc-dnd-sketch.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/zoey-pathpad.png" alt="desc" onclick="openModal()">
+                    </div>
+                
+
+                
+                    <div class="column">
+                        <img id="artpic" src="artimg/pomni-falling.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/mario-frog.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/jax-face-panel.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/wr-baddies.png" alt="desc" onclick="openModal()">
+                    </div>
+                
+
+                
+                    <div class="column">
+                        <img id="artpic" src="artimg/pomni-jax-guns.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/pomni-running.gif" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/shad-sketch.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/colorful-fish.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/wr-harpers-cold.png" alt="desc" onclick="openModal()">
+                    </div>
+                
+
+                
+                    <div class="column">
+                        <img id="artpic" src="artimg/sr-xtra-panel1.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/sr-xtra-panel2.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/sr-xtra-panel3.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/sr-xtra-panel4.png" alt="desc" onclick="openModal()">
+                        <img id="artpic" src="artimg/mta-portrait.png" alt="desc" onclick="openModal()">
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                 <!--little squid guy-->
+                 <div class="squidgraffiti">
+                    <img src="SRimg/yellow-squid-graffiti.png" id="squidgraffitipic">
+                 </div>
+            </main>
+            <!-- footer will be loaded with js-->
+        </div>
+    </body>
+</html>

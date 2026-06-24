@@ -82,7 +82,7 @@ body {
     line-height: 1.2;
     background: var(--background-color);
     background-image: url(SRimg/signs-p2.png);
-    background-size: cover;
+    background-size: 2048px auto;
     background-repeat: repeat-y;
     background-attachment: scroll;
     overflow-x: hidden;
@@ -869,3 +869,5 @@ squid graffiti
     font-size: 1rem;
   }
 }
+
+
