@@ -741,12 +741,11 @@ ___*/
 
 }
 
-/*
+
 .salmonoidsign:hover {
-    transform: rotate(-48deg);
-    filter:brightness(125%) drop-shadow(rgb(253, 104, 63) 0px 0px 0.75rem);
+    filter:brightness(125%) drop-shadow(rgb(255, 130, 95) 0px 0px 0.75rem);
 }
-*/
+
 #salmonoidpic {
     width: 300px;
     height: auto;

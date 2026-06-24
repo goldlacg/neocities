@@ -1,24 +1,25 @@
-//var modal = document.getElementById("myModal");
-var img = document.getElementById("artpic");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-
 function openModal() {
+    //grabbing image info
+    var source = event.target.src;
+    var desc = event.target.alt;
+
+    //showing the modal style formal
     document.getElementById("myModal").style.display = "block";
-    document.getElementById("img01").src = this.src;
 
-}
+    //testing w logs
+    console.log(document.getElementById("artpic").src);
+    console.log(source);
+    console.log(document.getElementById("picfocus"));
+    console.log(desc);
 
-/*
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg = this.src;
-    captionText.innerHTML = this.alt;
+    //grabbing the html elements and setting them as the image info we retrieved
+    document.getElementById("picfocus").src = source;
+
+    document.getElementById("caption").innerHTML = desc;
 }
 
 var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function() {
-    modal.style.display = "none";
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
 }
-*/

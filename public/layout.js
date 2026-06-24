@@ -55,6 +55,7 @@ function headerHTML() {
             <li><a href="${nesting}about">About</a></li>
             <li><a href="${nesting}resources">Resources</a></li>
             <li><a href="${nesting}salmonrun">Salmon Run</a></li>
+            <li><a href="${nesting}artpage">2D Art</a></li>
         	<!--<li>
         	
               	<details>
