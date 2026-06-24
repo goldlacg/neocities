@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--this is the title-->
+        <title>Salmon Run</title>
+
+        <!--description of site in search results-->
+        <meta content ="this is test website desc" name="description"/>
+
+        <!--setting character encoding and viewport size, DNR-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+
+        <!-- add css file-->
+         <link href="./style.css" rel="stylesheet"/>
+
+        <!-- add js-->
+         <script src="./layout.js"></script>
+         <script src="./tablinks.js"></script>
+
+         <script>
+            console.log("Template generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+
+         </script>
+
+    </head>
+    <body>
+        <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+        <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+        <div class="layout">
+            <!-- header will be loaded with js-->
+
+            <!--PICTURES THAT ARE ~SOMEWHERE~-->
+            <div class="pointsign">
+                <img src="light-up-arrow.png" id="arrowpic">
+            </div>
+            <div class="eatsign">
+                <img src="SRimg/eat-neon-sign-p1.png" id="eatpic">
+            </div>
+            <div class="salmonoidsign">
+                <img src="SRimg/salmonoid-sign.png" id="salmonoidpic">
+            </div>
+            <div class="fishnet">
+                <img src="SRimg/fishnet.png" id="fishnetpic">
+            </div>
+
+
+            <main id="content">
+                <noscript>
+                    <p>JavaScript is required for this site to function properly.</p>
+                </noscript>
+
+                <!-- main content-->
+                 <section>
+                    <h1>Boss Salmonids</h1>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openBoss(event, 'Steelhead')" id="defaultOpen">Steelhead</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Drizzler')">Drizzler</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Flyfish')">Flyfish</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Bigshot')">Bigshot</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Steel Eel')">Steel Eel</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Scrapper')">Scrapper</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Fish Stick')">Fish Stick</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Flipper Flopper')">Flipper-Flopper</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Maws')">Maws</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Slammin Lid')">Slammin' Lid</button>
+                        <button class="tablinks" onclick="openBoss(event, 'Stinger')">Stinger</button>
+                    </div>
+                    <!--Bosses-->
+                    <div id="Steelhead" class="tabcontent">
+                        <h3>Steelhead</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/steelhead.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 1000</li>
+                                    <li>The Steelhead's bomb has 300hp and will insta kill the Steelhead once splatted.</li>
+                                    <li>When a player splats the bomb, it can also damage nearby enemies.</li>
+                                    <li>A direct hit from it's bomb does 180 damage which is an instant kill.</li>
+                                    <li>Any damage to it's bomb is kept on subsequent bombs.</li>
+                                </ul>
+                            </p>
+                        </div>               
+                    </div>
+                    <div id="Drizzler" class="tabcontent">
+                        <h3>Drizzler</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/drizzler.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 900</li>
+                                    <li>The drizzler's missle has 100hp</li>
+                                    <li>The rain does 0.3 damage per frame, which equates to 18 damage per second</li>
+                                    <li>
+                                        Drizzler's have set points within a map that it can jump to. After sending two missles
+                                        out, it will jump to the point closest to the nearest player.
+                                    </li>
+                                    <li>
+                                        Damaging the missle will send it opposite from where you hit it. This can be used to instantly 
+                                        kill the Drizzler, or damage other Salmonoids.
+                                    </li>
+                                    <li>
+                                        While drizzlers are in the air, you can shoot them from below.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>                  
+                    </div>
+                    <div id="Bigshot" class="tabcontent">
+                        <h3>Big Shot</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/big-shot.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 1,200</li>
+                                    <li>The cannon ball sends two shock waves that each do 40 damage.</li>
+                                    <li>You can dodge the shockwaves by jumping over them.</li>
+                                    <li>
+                                        Only one Big Shot cannon will spawn per wave. Every Big Shot that spawns will
+                                        go to that cannon. 
+                                    </li>
+                                    <li>The cannon can fire Golden Eggs back to the basket. This can be incredibly helpful
+                                        but too much reliance can leave you vulnerable.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Flyfish" class="tabcontent">
+                        <h3>Flyfish</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/flyfish.png">
+                            <p>
+                                <ul>
+                                    <li>the devil</li>
+                                    <li>HP - 360</li>
+                                    <li>
+                                        A missle from a flyfish deals 150 on direct contact, making it an
+                                        instant kill. The ink from it's jet propulsion can also damage you.
+                                    </li>
+                                    <li>
+                                        It sends 4 missiles from each missile launcher and can lock on to 2 players
+                                    </li>
+                                    <li>
+                                        The following specials can destroy the launchers:
+                                        <ul>
+                                            <li>Crab Tank (cannon shots)</li>
+                                            <li>Reefslider (if at level or above)</li>
+                                            <li>Triple Splashdown</li>
+                                            <li>Inkjet</li>
+                                        </ul>
+                                        
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <p>
+                            <ul>
+                                <li>The following specials can destroy the cockpit:
+                                    <ul>
+                                        <li>Killer Wail</li>
+                                        <li>Triple Inkstrike</li>
+                                        <li>Booyah Bomb</li>
+                                        <li>Kraken Royale (jump while under the cockpit)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    The Explosher and Grizzco Dualies dodge roll can destroy launchers, 
+                                    and the Grizzco Slosher and Grizzco Splatana can destroy the cockpit.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="Steel Eel" class="tabcontent">
+                        <h3>Steel Eel</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/steel-eel.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 600</li>
+                                    <li>
+                                        Each collision with it's body does 50 damage. You can still be damaged during
+                                        it's death animation.
+                                    </li>
+                                    <li>
+                                        If it's aggro is on you, cordinate your movement to lead it's head
+                                        away from and expose it's backside to other players.
+                                    </li>
+                                    <li>
+                                        You can slide through the ink sprayers with Reefslider.
+                                    </li>
+                                    <li>
+                                        Be careful not to lure Steel Eel's too close to the basket, as it can quickly become
+                                        overwhelming.
+                                    </li>
+                                    <li>Bombs explode on contact with it's body.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Scrapper" class="tabcontent">
+                        <h3>Scrapper</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/scrapper.png">
+                            <p>
+                                <ul>
+                                    <li>Sheild HP - 600</li>
+                                    <li>Driver HP - 500</li>
+                                    <li>The scrapper does 30 damage when it runs into you.</li>
+                                    <li>When a scrapper is shot, it will stop and turn to face the player. </li>
+                                    <li>
+                                        If the scrapper is stunned, it takes 5 seconds for it's sheild to repair. If it's not stunned,
+                                        it takes 2 seconds after the last shot before it starts moving again.
+                                    </li>
+                                    <li>
+                                        It can be really helpful to stun a Scrapper with it's back facing another player.
+                                    </li>
+                                    <li>
+                                        Generally keep in mind where it's back is when you're attempting to stun it. Avoid backing it into a wall
+                                        where it becomes difficult to actually damage the driver.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Fish Stick" class="tabcontent">
+                        <h3>Fish Stick</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/fish-stick.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 32 (per smallfry, 8 total)</li>
+                                    <li>Each map has set locations for Fish Sticks to land</li>
+                                    <li>If all the smallfry are splatted before the Fish Stick lands, the piller breaks apart. </li>
+                                    <li>Do not ignore sticks that land close to the basket. You can choose to ignore them if they are far from it.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Flipper Flopper" class="tabcontent">
+                        <h3>Flipper-Flopper</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/flipper-flopper.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 1200 (armored)</li>
+                                    <li>HP - 300 (no armor)</li>
+                                    <li>Any player within it's ring when it dives is instantly splatted.</li>
+                                    <li>Bosses splatted within the ring can help paint it</li>
+                                    <li>It can be damaged any time it's above ink, which includes when it's head starts poking out.</li>
+                                    <li>Make sure these aren't above you while climbing walls.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Maws" class="tabcontent">
+                        <h3>Maws</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/maws.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 1200</li>
+                                    <li>Swallowing a bomb instantly splats it.</li>
+                                    <li>Any player is instantly splatted if caught in their jaws.</li>
+                                    <li>The Grizzco Splatana is the only weapon that can damage a Maws while it's submerged.</li>
+                                    <li>These are one of the easier, low-risk bosses to lure.</li>
+                                    <li>It is not recommended to use specials for Maws. Other bosses should take priority.</li>
+                                    <li>Maws can still splat players when they've just activated Inkjet or Booyah Bomb</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Slammin Lid" class="tabcontent">
+                        <h3>Slammin' Lid</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/slammin-lid.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 500</li>
+                                    <li>
+                                        If a player passes through it's force field, it will slam down, 
+                                        instantly splatting anything - including salmonids - under it.
+                                    </li>
+                                    <li>
+                                        If a player is on top of the saucer for too long, it will swing a laddle to knock them off.
+                                    </li>
+                                    <li>Bombs explode on contact with the force field</li>
+                                    <li>When defeated, it will damage enemies under it when as it lands.</li>
+                                    <li>It can be really helpful to use these to splat other bosses.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Stinger" class="tabcontent">
+                        <h3>Stinger</h3>
+                        <div class="boss-deets">
+                            <img src="SRimg/stinger.png">
+                            <p>
+                                <ul>
+                                    <li>HP - 60 per pot (7 pots totaling to 420 ehehheheheh)</li>
+                                    <li>
+                                        It's jet attack, similar to the Killer Wail, will attack 
+                                        the furthest player with 1 damage per frame.
+                                    </li>
+                                    <li>Sustained contact with the jet will splat a player within 1.4 seconds</li>
+                                    <li>Incredibly important to splat asap</li>
+                                    <li>Priortize these if you have a high DPS weapon</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                 </section>
+                 <!--little squid guy-->
+                 <div class="squidgraffiti">
+                    <img src="SRimg/yellow-squid-graffiti.png" id="squidgraffitipic">
+                 </div>
+            </main>
+            <!-- footer will be loaded with js-->
+        </div>
+        <!--some reason this line of js only works when inside this script-->
+        <script>
+            //default tab
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+</html>

@@ -53,8 +53,8 @@ function headerHTML() {
           <ul>
             <li><a href="${nesting}">Home</a></li>
             <li><a href="${nesting}about">About</a></li>
-            <!--<li><a href="/page2">Page 2</a></li>
-            <li><a href="/page3">Page 3</a></li>-->
+            <li><a href="${nesting}resources">Resources</a></li>
+            <li><a href="${nesting}salmonrun">Salmon Run</a></li>
         	<!--<li>
         	
               	<details>
@@ -155,6 +155,8 @@ function footerHTML() {
             <div>est. jun '26 | <a href="https://neocities.org/site/goldlace">neocities profile</a> | insta: @kinda.blooky</div>
       </footer>`;
 }
+
+
 
 /* Do not edit anything below this line unless you know what you're doing. */
 

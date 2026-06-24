@@ -7,13 +7,26 @@
     font-family: fuzzy-bubbles;
     src: url(fonts/FuzzyBubbles-Regular.ttf);
 }
+@keyframes initial-swing {
+    0% {transform: rotate(-48deg);}
+    25% {transform: rotate(15deg);}
+    50% {transform: rotate(-20deg);}
+    75% {transform: rotate(5deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+@keyframes infinite-swing {
+    0% {transform: rotate(-20deg);}
+    50% {transform: rotate(5deg);}
+    100% {transform: rotate(-20deg);}
+}
 
 /* variables */
 
 :root {
     /* background colors */
     --background-color: #000000;
-    --content-background-color: #111014;
+    --content-background-color: #57575793;
     --sidebar-background-color: #30251a9c;
 
     /* text colors */
@@ -25,8 +38,19 @@
     /* text */
     --font: fuzzy-bubbles;
     --heading-font: rock-salt;
-    --sidebar-font: Helvetica;
+    --sidebar-font: "Lucida Console", monospace;
     --font-size: 16px;
+
+    /* color palette */
+    --orange: #e0700e;
+    --neon-red: rgb(255, 43, 6);
+    --neon-orange: #ff7037;
+    --dark-teal: rgb(11, 109, 80);
+    --cream-white: #edeacc;
+    --olive: #6b9431;
+    --deep-red-brown: #421408;
+    --neon-green: rgb(26, 255, 106);
+    --yellow: #ffe044;
 
     /*other*/
     --margin: 40px;
@@ -106,10 +130,14 @@ main {
     grid-area: main;
     overflow-y: auto;
     padding: var(--padding);
-    background: var(--content-background-color);
     border: var(--border);
     border-radius: var(--round-borders);
     box-shadow: var(--box-shadow);
+    background-image: url(SRimg/textbkg.png);
+    background-repeat: repeat;
+    background-size: 50%;
+    
+
 }
 
 /*__________________________*/
@@ -171,10 +199,12 @@ aside {
     border: var(--border);
     border-radius: var(--round-borders);
     overflow: hidden;
-    background: var(--sidebar-background-color);
     padding: var(--padding);
     color: var(--sidebar-text-color);
     box-shadow: var(--box-shadow);
+    background-image: url(SRimg/textbkg.png);
+    background-repeat: repeat;
+    background-size: 120%;
 }
 
 .left-sidebar {
@@ -274,10 +304,12 @@ footer {
     overflow: hidden;
     font-size: 0.75em;
     padding: 15px;
-    background: var(--content-background-color);
     display: flex;
     justify-content: center;
     box-shadow: var(--box-shadow);
+    background-image: url(SRimg/textbkg.png);
+    background-repeat: repeat;
+    background-size: 35%;
 }
 
 footer a,
@@ -370,6 +402,13 @@ main ol {
     padding-left: 2em;
 }
 
+main ul {
+    list-style-type: disc;
+    list-style-image: url("favicon.ico");
+    list-style-position: inside;
+}
+
+
 main blockquote {
     font-size: 24px;
     background: rgba(93, 88, 83, 0.1);
@@ -414,9 +453,71 @@ main section {
     padding-block: 10px;
     padding-inline: 5px;
     position: relative;
-    border: 3px dashed rgb(11, 109, 80);
+    border: 4px double #d48a6d;
     margin-bottom: 1em;
     border-radius: 10px;
+}
+
+.boss-deets {
+    display: flex;
+    position: relative;
+}
+
+.boss-deets img {
+    position: relative;
+    display: flex;
+    width: 244px;
+    height: 341px;
+
+}
+
+/*__________________________
+    TABS
+____________________________*/
+
+.tab {
+    display: flex;
+    overflow: hidden;
+    background-color: none;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
+
+.tab button {
+    background-color: rgb(249, 231, 201);
+    float: left;
+    border: 4px double rgb(159, 73, 20);
+    border-radius: 15px 15px 0 0;
+    outline: none;
+    cursor: pointer;
+    margin: 4px;
+    width: auto;
+    height: 40px;
+    padding-inline:14px;
+    transition: 0.3s;
+    font: bold 16px var(--font);
+    color: rgb(54, 17, 7)
+}
+
+.tab button:hover {
+    background-color: rgb(248, 211, 162);
+}
+
+.tab button.active {
+    background-color: rgb(229, 143, 73);
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 3px double rgb(159, 73, 20);
+    border-radius: 10px;
+    border-top: none;
+}
+
+.tabcontent ul {
+    list-style-position: outside;
 }
 
 /*__________________________*/
@@ -467,6 +568,12 @@ main h5 {
 
 main h6 {
   font-size: 1em;
+}
+
+.headingcontainer {
+    display:block;
+    border-bottom: 3px dotted var(--dark-teal);
+    width: 35%;
 }
 
 /*__________________________*/
@@ -521,7 +628,46 @@ main h6 {
   margin: 0;
   overflow: hidden;
 }
+/*____
+blog pics
+*/
+#big-run-pic, #hlm-pic {
+    border: 2px solid #d48a6d;
+    border-radius: 4px;
+}
 
+#big-run-pic {
+    display: flex;
+    float: right;
+    width: 30%;
+    height: 30%;
+    
+}
+
+#hlm-pic {
+    display: block;
+    float: center;
+    justify-self: center;
+    width: 80%;
+    height: 80%;
+    
+}
+
+.recent-lockers {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#lockerpic {
+    float: left;
+    width: 100%;
+}
+
+.locker-desc {
+    flex-direction: column;
+    text-align: center;
+}
 /*___
 all about arrow
 ___*/
@@ -589,13 +735,17 @@ ___*/
     transform: rotate(-22deg);
     transition: transform 0.5s ease;
     filter: drop-shadow(rgb(255, 85, 46) 0px 0px 0.75rem);
+
+    animation: initial-swing 5s ease-in-out forwards, infinite-swing 2.5s ease-in-out 5s infinite;
+
 }
 
+/*
 .salmonoidsign:hover {
     transform: rotate(-48deg);
     filter:brightness(125%) drop-shadow(rgb(253, 104, 63) 0px 0px 0.75rem);
 }
-
+*/
 #salmonoidpic {
     width: 300px;
     height: auto;
