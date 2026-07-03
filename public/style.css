@@ -774,6 +774,61 @@ ___*/
 }
 
 /*
+wires
+*/
+
+.wires {
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    translate: -350px -40px;
+}
+
+#wirepic {
+    width: 800px;
+    height: auto;
+    object-fit: cover;
+    filter: blur(1px);
+}
+
+/*
+posters
+*/
+
+.lighthire {
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    translate: -190px 800px;
+    rotate: 7deg;
+    filter: brightness(80%);
+}
+
+#lighthirepic {
+    width: 250px;
+    height: auto;
+}
+
+.salmonidposter {
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    translate: -320px 900px;
+    rotate: -13deg;
+    filter: brightness(90%);
+}
+
+#salmonidposterpic {
+    width: 400px;
+    height: auto;
+}
+
+
+
+/*
 squid graffiti
 */
 
